@@ -1,0 +1,18 @@
+COUNT	write_speed_test.cpp	22
+Mwrite_speed_test.cpp	write_speed_test.cpp	/^int main(int argc, char *argv[])$/
+STR_LEN	write_speed_test.cpp	21
+WRITE_FILE	write_speed_test.cpp	19
+diffTime	write_speed_test.cpp	/^double diffTime(struct timeval struStop, struct ti/
+fprintf_write1	write_speed_test.cpp	/^void fprintf_write1()$/
+fwrite_write2	write_speed_test.cpp	/^void fwrite_write2()$/
+fwrite_write2_1	write_speed_test.cpp	/^void fwrite_write2_1()   $/
+g_strUserFlow	write_speed_test.cpp	23
+mmap_write5	write_speed_test.cpp	/^void mmap_write5()$/
+mmap_write5_1	write_speed_test.cpp	/^void mmap_write5_1()$/
+mmap_write5_2	write_speed_test.cpp	/^void mmap_write5_2()$/
+mmap_write5_3	write_speed_test.cpp	/^void mmap_write5_3()$/
+setRecordData	write_speed_test.cpp	/^void setRecordData(char *pStrBuf, unsigned long ul/
+usPageSize	write_speed_test.cpp	20
+write_direct3	write_speed_test.cpp	/^void write_direct3()   $/
+write_write4	write_speed_test.cpp	/^void write_write4()$/
+write_write4_1	write_speed_test.cpp	/^void write_write4_1()   $/

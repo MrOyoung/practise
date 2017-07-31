@@ -1,0 +1,384 @@
+GPU2D : 
+MMDC GPU2D 
+
+MMDC new Profiling results:
+***********************
+Measure time: 1000ms 
+Total cycles count: 528077048
+Busy cycles count: 80860076
+Read accesses count: 0
+Write accesses count: 0
+Read bytes count: 0
+Write bytes count: 0
+Avg. Read burst size: 0
+Avg. Write burst size: 0
+Read: 0.00 MB/s /  Write: 0.00 MB/s  Total: 0.00 MB/s 
+Utilization: 0%
+Bus Load: 0%
+Bytes Access: 0
+
+---------------1--------------------
+MMDC GPU2D 
+
+MMDC new Profiling results:
+***********************
+Measure time: 1000ms 
+Total cycles count: 528076272
+Busy cycles count: 82192423
+Read accesses count: 0
+Write accesses count: 0
+Read bytes count: 0
+Write bytes count: 0
+Avg. Read burst size: 0
+Avg. Write burst size: 0
+Read: 0.00 MB/s /  Write: 0.00 MB/s  Total: 0.00 MB/s 
+Utilization: 0%
+Bus Load: 0%
+Bytes Access: 0
+
+---------------2--------------------
+MMDC GPU2D 
+
+MMDC new Profiling results:
+***********************
+Measure time: 1000ms 
+Total cycles count: 528072440
+Busy cycles count: 80039589
+Read accesses count: 0
+Write accesses count: 0
+Read bytes count: 0
+Write bytes count: 0
+Avg. Read burst size: 0
+Avg. Write burst size: 0
+Read: 0.00 MB/s /  Write: 0.00 MB/s  Total: 0.00 MB/s 
+Utilization: 0%
+Bus Load: 0%
+Bytes Access: 0
+
+---------------3--------------------
+MMDC GPU2D 
+
+MMDC new Profiling results:
+***********************
+Measure time: 1000ms 
+Total cycles count: 528090424
+Busy cycles count: 79923223
+Read accesses count: 0
+Write accesses count: 0
+Read bytes count: 0
+Write bytes count: 0
+Avg. Read burst size: 0
+Avg. Write burst size: 0
+Read: 0.00 MB/s /  Write: 0.00 MB/s  Total: 0.00 MB/s 
+Utilization: 0%
+Bus Load: 0%
+Bytes Access: 0
+
+---------------4--------------------
+MMDC GPU2D 
+
+MMDC new Profiling results:
+***********************
+Measure time: 1000ms 
+Total cycles count: 528076104
+Busy cycles count: 79611746
+Read accesses count: 0
+Write accesses count: 0
+Read bytes count: 0
+Write bytes count: 0
+Avg. Read burst size: 0
+Avg. Write burst size: 0
+Read: 0.00 MB/s /  Write: 0.00 MB/s  Total: 0.00 MB/s 
+Utilization: 0%
+Bus Load: 0%
+Bytes Access: 0
+
+---------------5--------------------
+MMDC GPU2D 
+
+MMDC new Profiling results:
+***********************
+Measure time: 1001ms 
+Total cycles count: 528076416
+Busy cycles count: 79940964
+Read accesses count: 0
+Write accesses count: 0
+Read bytes count: 0
+Write bytes count: 0
+Avg. Read burst size: 0
+Avg. Write burst size: 0
+Read: 0.00 MB/s /  Write: 0.00 MB/s  Total: 0.00 MB/s 
+Utilization: 0%
+Bus Load: 0%
+Bytes Access: 0
+
+---------------6--------------------
+MMDC GPU2D 
+
+MMDC new Profiling results:
+***********************
+Measure time: 1000ms 
+Total cycles count: 528076168
+Busy cycles count: 82295325
+Read accesses count: 0
+Write accesses count: 0
+Read bytes count: 0
+Write bytes count: 0
+Avg. Read burst size: 0
+Avg. Write burst size: 0
+Read: 0.00 MB/s /  Write: 0.00 MB/s  Total: 0.00 MB/s 
+Utilization: 0%
+Bus Load: 0%
+Bytes Access: 0
+
+---------------7--------------------
+MMDC GPU2D 
+
+MMDC new Profiling results:
+***********************
+Measure time: 1000ms 
+Total cycles count: 528075328
+Busy cycles count: 80766660
+Read accesses count: 0
+Write accesses count: 0
+Read bytes count: 0
+Write bytes count: 0
+Avg. Read burst size: 0
+Avg. Write burst size: 0
+Read: 0.00 MB/s /  Write: 0.00 MB/s  Total: 0.00 MB/s 
+Utilization: 0%
+Bus Load: 0%
+Bytes Access: 0
+
+---------------8--------------------
+MMDC GPU2D 
+
+MMDC new Profiling results:
+***********************
+Measure time: 1000ms 
+Total cycles count: 528076040
+Busy cycles count: 90045287
+Read accesses count: 0
+Write accesses count: 0
+Read bytes count: 0
+Write bytes count: 0
+Avg. Read burst size: 0
+Avg. Write burst size: 0
+Read: 0.00 MB/s /  Write: 0.00 MB/s  Total: 0.00 MB/s 
+Utilization: 0%
+Bus Load: 0%
+Bytes Access: 0
+
+---------------9--------------------
+MMDC GPU2D 
+
+MMDC new Profiling results:
+***********************
+Measure time: 1000ms 
+Total cycles count: 528076520
+Busy cycles count: 80408289
+Read accesses count: 0
+Write accesses count: 0
+Read bytes count: 0
+Write bytes count: 0
+Avg. Read burst size: 0
+Avg. Write burst size: 0
+Read: 0.00 MB/s /  Write: 0.00 MB/s  Total: 0.00 MB/s 
+Utilization: 0%
+Bus Load: 0%
+Bytes Access: 0
+
+---------------10--------------------
+----------------------------------------
+--------------   wl-gear  --------------
+----------------------------------------
+MMDC GPU2D 
+
+MMDC new Profiling results:
+***********************
+Measure time: 1000ms 
+Total cycles count: 528068384
+Busy cycles count: 123652651
+Read accesses count: 1639627
+Write accesses count: 1087488
+Read bytes count: 104588144
+Write bytes count: 69599232
+Avg. Read burst size: 63
+Avg. Write burst size: 64
+Read: 99.74 MB/s /  Write: 66.38 MB/s  Total: 166.12 MB/s 
+Utilization: 8%
+Bus Load: 23%
+Bytes Access: 63
+
+---------------1--------------------
+MMDC GPU2D 
+
+MMDC new Profiling results:
+***********************
+Measure time: 1000ms 
+Total cycles count: 528071744
+Busy cycles count: 124863831
+Read accesses count: 1640800
+Write accesses count: 1087488
+Read bytes count: 104605832
+Write bytes count: 69599232
+Avg. Read burst size: 63
+Avg. Write burst size: 64
+Read: 99.76 MB/s /  Write: 66.38 MB/s  Total: 166.13 MB/s 
+Utilization: 8%
+Bus Load: 23%
+Bytes Access: 63
+
+---------------2--------------------
+MMDC GPU2D 
+
+MMDC new Profiling results:
+***********************
+Measure time: 1000ms 
+Total cycles count: 528074248
+Busy cycles count: 122581746
+Read accesses count: 1640000
+Write accesses count: 1087488
+Read bytes count: 104592968
+Write bytes count: 69599232
+Avg. Read burst size: 63
+Avg. Write burst size: 64
+Read: 99.75 MB/s /  Write: 66.38 MB/s  Total: 166.12 MB/s 
+Utilization: 8%
+Bus Load: 23%
+Bytes Access: 63
+
+---------------3--------------------
+MMDC GPU2D 
+
+MMDC new Profiling results:
+***********************
+Measure time: 1001ms 
+Total cycles count: 528076872
+Busy cycles count: 124119900
+Read accesses count: 1640304
+Write accesses count: 1087488
+Read bytes count: 104595656
+Write bytes count: 69599232
+Avg. Read burst size: 63
+Avg. Write burst size: 64
+Read: 99.65 MB/s /  Write: 66.31 MB/s  Total: 165.96 MB/s 
+Utilization: 8%
+Bus Load: 23%
+Bytes Access: 63
+
+---------------4--------------------
+MMDC GPU2D 
+
+MMDC new Profiling results:
+***********************
+Measure time: 1000ms 
+Total cycles count: 528079128
+Busy cycles count: 125887854
+Read accesses count: 1640226
+Write accesses count: 1087488
+Read bytes count: 104596664
+Write bytes count: 69599232
+Avg. Read burst size: 63
+Avg. Write burst size: 64
+Read: 99.75 MB/s /  Write: 66.38 MB/s  Total: 166.13 MB/s 
+Utilization: 8%
+Bus Load: 23%
+Bytes Access: 63
+
+---------------5--------------------
+MMDC GPU2D 
+
+MMDC new Profiling results:
+***********************
+Measure time: 1001ms 
+Total cycles count: 528086520
+Busy cycles count: 121611832
+Read accesses count: 1640109
+Write accesses count: 1087488
+Read bytes count: 104594776
+Write bytes count: 69599232
+Avg. Read burst size: 63
+Avg. Write burst size: 64
+Read: 99.65 MB/s /  Write: 66.31 MB/s  Total: 165.96 MB/s 
+Utilization: 8%
+Bus Load: 23%
+Bytes Access: 63
+
+---------------6--------------------
+MMDC GPU2D 
+
+MMDC new Profiling results:
+***********************
+Measure time: 1000ms 
+Total cycles count: 528081200
+Busy cycles count: 123582609
+Read accesses count: 1640389
+Write accesses count: 1087488
+Read bytes count: 104599176
+Write bytes count: 69599232
+Avg. Read burst size: 63
+Avg. Write burst size: 64
+Read: 99.75 MB/s /  Write: 66.38 MB/s  Total: 166.13 MB/s 
+Utilization: 8%
+Bus Load: 23%
+Bytes Access: 63
+
+---------------7--------------------
+MMDC GPU2D 
+
+MMDC new Profiling results:
+***********************
+Measure time: 1000ms 
+Total cycles count: 528129432
+Busy cycles count: 124252426
+Read accesses count: 1640366
+Write accesses count: 1087488
+Read bytes count: 104596512
+Write bytes count: 69599232
+Avg. Read burst size: 63
+Avg. Write burst size: 64
+Read: 99.75 MB/s /  Write: 66.38 MB/s  Total: 166.13 MB/s 
+Utilization: 8%
+Bus Load: 23%
+Bytes Access: 63
+
+---------------8--------------------
+MMDC GPU2D 
+
+MMDC new Profiling results:
+***********************
+Measure time: 1000ms 
+Total cycles count: 528080304
+Busy cycles count: 122240961
+Read accesses count: 1642593
+Write accesses count: 1088667
+Read bytes count: 104743888
+Write bytes count: 69674688
+Avg. Read burst size: 63
+Avg. Write burst size: 64
+Read: 99.89 MB/s /  Write: 66.45 MB/s  Total: 166.34 MB/s 
+Utilization: 8%
+Bus Load: 23%
+Bytes Access: 63
+
+---------------9--------------------
+MMDC GPU2D 
+
+MMDC new Profiling results:
+***********************
+Measure time: 1000ms 
+Total cycles count: 528100872
+Busy cycles count: 127788518
+Read accesses count: 1641375
+Write accesses count: 1088802
+Read bytes count: 104682160
+Write bytes count: 69683328
+Avg. Read burst size: 63
+Avg. Write burst size: 64
+Read: 99.83 MB/s /  Write: 66.46 MB/s  Total: 166.29 MB/s 
+Utilization: 8%
+Bus Load: 24%
+Bytes Access: 63
+
+---------------10--------------------

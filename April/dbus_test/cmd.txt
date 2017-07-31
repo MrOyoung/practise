@@ -1,0 +1,3 @@
+mxc_v4l2_overlay -iw 800 -ih 480 -ow 1920 -oh 720 -di /dev/video0
+
+mxc_v4l2_overlay -iw 800 -ih 480 -ow 1920 -oh 720 -di /dev/video3

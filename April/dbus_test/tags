@@ -1,0 +1,76 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+AddMatch	dbusclient.h	/^    bool AddMatch(const char* pRules){$/;"	f	language:C++	class:DBusClient	signature:(const char* pRules)
+CXX	makefile	/^CXX:=arm-mel-linux-g++$/;"	m	language:Make
+CXXFLAGS	makefile	/^CXXFLAGS:=--sysroot=\/opt\/mentor-sysdk\/2015.12\/sysroots\/cortexa9hf-vfp-neon-mel-linux-gnueabi\/ -mfloat-abi=hard -mfpu=neon$/;"	m	language:Make
+Create	dbusclient.h	/^    bool Create(const char* pName , const char* pInterface){$/;"	f	language:C++	class:DBusClient	signature:(const char* pName , const char* pInterface)
+DBusClient	dbusclient.h	/^    DBusClient(){$/;"	f	language:C++	class:DBusClient	signature:()
+DBusClient	dbusclient.h	/^class DBusClient{$/;"	c	language:C++
+DBusClient::AddMatch	dbusclient.h	/^    bool AddMatch(const char* pRules){$/;"	f	language:C++	class:DBusClient	signature:(const char* pRules)
+DBusClient::Create	dbusclient.h	/^    bool Create(const char* pName , const char* pInterface){$/;"	f	language:C++	class:DBusClient	signature:(const char* pName , const char* pInterface)
+DBusClient::DBusClient	dbusclient.h	/^    DBusClient(){$/;"	f	language:C++	class:DBusClient	signature:()
+DBusClient::Destroy	dbusclient.h	/^    void Destroy(){$/;"	f	language:C++	class:DBusClient	signature:()
+DBusClient::GetMessage	dbusclient.h	/^    bool GetMessage(int* pMessageID, int* pData ){$/;"	f	language:C++	class:DBusClient	signature:(int* pMessageID, int* pData )
+DBusClient::Send	dbusclient.h	/^    bool Send(void* pData, int size , const char* pObjectPath ){$/;"	f	language:C++	class:DBusClient	signature:(void* pData, int size , const char* pObjectPath )
+DBusClient::m_pConnection	dbusclient.h	/^    DBusConnection* m_pConnection;$/;"	m	language:C++	class:DBusClient
+DBusClient::m_pInterface	dbusclient.h	/^    char* m_pInterface;$/;"	m	language:C++	class:DBusClient
+DBusClient::~DBusClient	dbusclient.h	/^    ~DBusClient(){$/;"	f	language:C++	class:DBusClient	signature:()
+Destroy	dbusclient.h	/^    void Destroy(){$/;"	f	language:C++	class:DBusClient	signature:()
+GetMessage	dbusclient.h	/^    bool GetMessage(int* pMessageID, int* pData ){$/;"	f	language:C++	class:DBusClient	signature:(int* pMessageID, int* pData )
+Send	dbusclient.h	/^    bool Send(void* pData, int size , const char* pObjectPath ){$/;"	f	language:C++	class:DBusClient	signature:(void* pData, int size , const char* pObjectPath )
+_DBUSCLIENT_H_	dbusclient.h	2;"	d	language:C++
+_UTIL_H_	util.h	2;"	d	language:C++
+big_dbus_msg	util.h	/^struct big_dbus_msg{$/;"	s	language:C++
+big_dbus_msg::it	util.h	/^	DBusMessageIter it;$/;"	m	language:C++	struct:big_dbus_msg
+big_dbus_msg::m	util.h	/^	DBusMessage* m;$/;"	m	language:C++	struct:big_dbus_msg
+big_dbus_msg::total	util.h	/^	int total;$/;"	m	language:C++	struct:big_dbus_msg
+big_msg_append_array	util.c	/^int big_msg_append_array( struct big_dbus_msg* big, const void* array , int size )$/;"	f	language:C	signature:( struct big_dbus_msg* big, const void* array , int size )
+big_msg_append_array	util.h	/^int big_msg_append_array( struct big_dbus_msg* big, const void* array , int size );$/;"	p	language:C++	signature:( struct big_dbus_msg* big, const void* array , int size )
+big_msg_get_array	util.c	/^int big_msg_get_array(struct big_dbus_msg* big , void** array , int* size)$/;"	f	language:C	signature:(struct big_dbus_msg* big , void** array , int* size)
+big_msg_get_array	util.h	/^int big_msg_get_array(struct big_dbus_msg* big , void** array , int* size);$/;"	p	language:C++	signature:(struct big_dbus_msg* big , void** array , int* size)
+big_msg_read	util.c	/^int big_msg_read(DBusConnection* dbus , struct big_dbus_msg* big, int timeout)$/;"	f	language:C	signature:(DBusConnection* dbus , struct big_dbus_msg* big, int timeout)
+big_msg_read	util.h	/^int big_msg_read(DBusConnection* dbus , struct big_dbus_msg* big, int timeout);$/;"	p	language:C++	signature:(DBusConnection* dbus , struct big_dbus_msg* big, int timeout)
+big_msg_write_init	util.c	/^int big_msg_write_init(struct big_dbus_msg* big , const char* path , const char* interface)$/;"	f	language:C	signature:(struct big_dbus_msg* big , const char* path , const char* interface)
+big_msg_write_init	util.h	/^int big_msg_write_init(struct big_dbus_msg* msg , const char* path , const char* interface);$/;"	p	language:C++	signature:(struct big_dbus_msg* msg , const char* path , const char* interface)
+bigsignal.c	bigsignal.c	1;"	F	language:C
+dbus_add_match	dbusclient.h	/^int dbus_add_match(DBusConnection* dbus, const char* rules )$/;"	f	language:C++	signature:(DBusConnection* dbus, const char* rules )
+dbus_add_match	util.c	/^int dbus_add_match(DBusConnection* dbus, const char* rules )$/;"	f	language:C	signature:(DBusConnection* dbus, const char* rules )
+dbus_add_match	util.h	/^int dbus_add_match(DBusConnection* dbus, const char* rules );$/;"	p	language:C++	signature:(DBusConnection* dbus, const char* rules )
+dbus_get_message	dbusclient.h	/^int dbus_get_message(DBusConnection* dbus, int* messageid , int* data)$/;"	f	language:C++	signature:(DBusConnection* dbus, int* messageid , int* data)
+dbus_get_message	util.c	/^int dbus_get_message(DBusConnection* dbus, void* message, int* length)$/;"	f	language:C	signature:(DBusConnection* dbus, void* message, int* length)
+dbus_get_message	util.h	/^int dbus_get_message(DBusConnection* dbus, void* message, int* length);$/;"	p	language:C++	signature:(DBusConnection* dbus, void* message, int* length)
+dbus_get_message_timeout	util.c	/^int dbus_get_message_timeout(DBusConnection* dbus, void* message, int* length, int ms_timeout )$/;"	f	language:C	signature:(DBusConnection* dbus, void* message, int* length, int ms_timeout )
+dbus_get_message_timeout	util.h	/^int dbus_get_message_timeout(DBusConnection* dbus, void* message, int* length, int ms_timeout );$/;"	p	language:C++	signature:(DBusConnection* dbus, void* message, int* length, int ms_timeout )
+dbus_send	dbusclient.h	/^int dbus_send(DBusConnection* dbus,void* array,int size,const char* path,const char*interface )$/;"	f	language:C++	signature:(DBusConnection* dbus,void* array,int size,const char* path,const char*interface )
+dbus_send	util.c	/^int dbus_send(DBusConnection* dbus,void* array,int size,const char* path,const char*interface )$/;"	f	language:C	signature:(DBusConnection* dbus,void* array,int size,const char* path,const char*interface )
+dbus_send	util.h	/^int dbus_send(DBusConnection* dbus,void* array,int size,const char* path,const char*interface );$/;"	p	language:C++	signature:(DBusConnection* dbus,void* array,int size,const char* path,const char*interface )
+dbus_send_noblocking	util.c	/^int dbus_send_noblocking( DBusConnection* dbus, void* array,int size , const char* path, char*interface   )$/;"	f	language:C	signature:( DBusConnection* dbus, void* array,int size , const char* path, char*interface )
+dbus_send_noblocking	util.h	/^int dbus_send_noblocking( DBusConnection* dbus, void* array,int size , const char* path, char*interface   );$/;"	p	language:C++	signature:( DBusConnection* dbus, void* array,int size , const char* path, char*interface )
+dbusclient.h	dbusclient.h	1;"	F	language:C++
+debug_hex_array	util.c	/^void debug_hex_array(const char* name , const byte* array , int size )$/;"	f	language:C	signature:(const char* name , const byte* array , int size )
+debug_hex_array	util.h	/^void debug_hex_array(const char* name , const byte* array , int size );$/;"	p	language:C++	signature:(const char* name , const byte* array , int size )
+fake_data.c	fake_data.c	1;"	F	language:C
+get_dbus	dbusclient.h	/^DBusConnection* get_dbus(const char* well_known_name)$/;"	f	language:C++	signature:(const char* well_known_name)
+get_dbus	util.c	/^DBusConnection* get_dbus(const char* well_known_name)$/;"	f	language:C	signature:(const char* well_known_name)
+get_dbus	util.h	/^DBusConnection* get_dbus(const char* well_known_name);$/;"	p	language:C++	signature:(const char* well_known_name)
+get_tick_count	util.c	/^unsigned long get_tick_count()$/;"	f	language:C
+get_tick_count	util.h	/^unsigned long get_tick_count();$/;"	p	language:C++	signature:()
+hexs	util.c	/^static char hexs[] = {$/;"	v	language:C	file:
+it	util.h	/^	DBusMessageIter it;$/;"	m	language:C++	struct:big_dbus_msg
+m	util.h	/^	DBusMessage* m;$/;"	m	language:C++	struct:big_dbus_msg
+m_pConnection	dbusclient.h	/^    DBusConnection* m_pConnection;$/;"	m	language:C++	class:DBusClient
+m_pInterface	dbusclient.h	/^    char* m_pInterface;$/;"	m	language:C++	class:DBusClient
+main	bigsignal.c	/^int main(int argc,char** argv)$/;"	f	language:C	signature:(int argc,char** argv)
+main	fake_data.c	/^int main( int argc , char ** argv)$/;"	f	language:C	signature:( int argc , char ** argv)
+main	receiver.c	/^int main(int argc,char** argv)$/;"	f	language:C	signature:(int argc,char** argv)
+makefile	makefile	1;"	F	language:Make
+receiver.c	receiver.c	1;"	F	language:C
+sender.c	sender.c	1;"	F	language:C
+total	util.h	/^	int total;$/;"	m	language:C++	struct:big_dbus_msg
+util.c	util.c	1;"	F	language:C
+util.h	util.h	1;"	F	language:C++
+~DBusClient	dbusclient.h	/^    ~DBusClient(){$/;"	f	language:C++	class:DBusClient	signature:()

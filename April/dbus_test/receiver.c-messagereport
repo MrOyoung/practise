@@ -1,0 +1,52 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include "util.h"
+#include "msgid.h"
+
+int main(int argc,char** argv)
+{
+    (void)argc;(void)argv;
+
+    DBusConnection* dbus = get_dbus( "com.saic.AppCluster" );
+
+    if( dbus_add_match( dbus , "type='signal',path='/com/saic/AppCluster'" ) < 0 ){
+        printf( "add match error!" );
+        exit( 1 );
+    }
+    
+    unsigned int array[8];
+    int  size;
+    
+    int empty = 0;
+    while( 1 ){
+        if( dbus_get_message_timeout( dbus , array, &size , (empty>5)?-1:0 ) >= 0 ){
+        
+            unsigned long index = (array[0]) & 0xffff;
+            const char* name;
+            if( index > (sizeof(msgs)/sizeof(msgs[0]) ) )
+                name = "error msgid";
+            else
+                name = msgs[index].name;
+                
+            if( 8 == size )
+                printf( " msgid:%u - data:%u - hex:0x%x - size:%d - name:%s \n", array[0] , array[1] , array[1] , size , name );
+            else{
+                unsigned short* s = (unsigned short*)(array + 1);
+
+                printf( " msgid:%u - ", array[0] );
+
+                int i;
+                for( i = 0 ;i < ((size-4)/2); i++ )
+                    printf( " data%d:%hd - hex:0x%hx -" , i  , s[i] ,   s[i] );
+
+                printf(" name:%s\n" , name );
+            }
+
+            empty = 0;
+        }else{
+            empty++;
+        }
+    }
+
+    return 0;
+}
