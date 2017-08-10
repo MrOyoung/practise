@@ -9,7 +9,7 @@
 #define _CONFIG_H_
 
 
-#define BUFFER_SIZE 1024
+#define BUFFER_SIZE 1024 
 
 
 #endif //_CONFIG_H_

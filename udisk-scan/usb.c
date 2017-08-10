@@ -33,7 +33,7 @@ static inline int udisk_create_socket_fd(void)
 	snl.nl_groups = 1;		/* 多组播掩码 */	
 
 	/* create socket fd */
-	if (-1 == (sockfd = socket(AF_NETLINK, SOCK_RAW, NETLINK_KOBJECT_UEVENT)))
+	if (-1 == (sockfd = socket(AF_NETLINK, SOCK_DGRAM, NETLINK_KOBJECT_UEVENT)))
 	{
 		prtExit(-1, "socket error %s\n", strerror(errno));
 	}
@@ -43,7 +43,7 @@ static inline int udisk_create_socket_fd(void)
 			SOL_SOCKET,
 			SO_RCVBUF, 
 			(const void *)&recv_buffer_size,
-			sizeof(BUFFER_SIZE));	
+			sizeof(recv_buffer_size));	
 
 	if (-1 == bind(sockfd, (struct sockaddr *)&snl, sizeof(struct sockaddr_nl)))
 	{
@@ -53,56 +53,96 @@ static inline int udisk_create_socket_fd(void)
 	return sockfd;
 }
 
+const char *add_str = "add@/devices";
+const char *rmv_str = "remove@/devices";
 
-int udisk_monitor(void *arg)
+enum
+{
+	ADD,
+	REMOVE
+};
+
+char dev_name[32] = {0};
+
+unsigned int udisk_get_name(char *buf, int flag)
+{
+	char *tmp = strstr(buf, "block/sdb/");
+	if (!tmp)
+		return -1;
+
+	tmp = strrchr(tmp, '/');
+
+	bzero(dev_name, sizeof(dev_name));
+	strcat(dev_name, "/dev");
+	strcat(dev_name, tmp);
+
+	if (ADD == flag)
+		prtMsg("[ add ] %s\n", dev_name);
+	else if (REMOVE == flag)
+		prtMsg("[ remove ] %s\n", dev_name);
+
+	return 0;
+}
+
+unsigned int udisk_parse(char *buf)
+{
+	char *tmp = buf;
+	int plug_flag;
+
+	if (!strncmp(tmp, add_str, strlen(add_str)))
+		plug_flag = ADD;
+	else if (!strncmp(tmp, rmv_str, strlen(rmv_str)))
+		plug_flag = REMOVE;
+
+	udisk_get_name(tmp, plug_flag);	
+
+	return 0;
+}
+
+void udisk_recv(int sockfd)
 {
 	int retval;
 	fd_set read_set;
-	struct timeval tm;
-	char uevent_buf[BUFFER_SIZE] = {0};
 
-	int udisk_fd = udisk_create_socket_fd();
-	int maxfd = udisk_fd + 1;
-	(void)maxfd;
-
-	prtMsg("socket fd = %d\n", udisk_fd);
-
+	char uevent_buf[BUFFER_SIZE * 4] = {0};
 	while(1)
 	{
-
-		tm.tv_sec	= 2;
-		tm.tv_usec	= 0;
-
 		FD_ZERO(&read_set);
-		FD_SET(udisk_fd, &read_set);	
+		FD_SET(sockfd, &read_set);	
 
-		retval = select((udisk_fd + 1),
-				&read_set,
-				NULL,
-				NULL,
-				NULL);
+		/* block */
+		retval = select((sockfd + 1), &read_set, NULL, NULL, NULL);
 		if (-1 == retval)
 		{
 			prtMsg("select error %s\n", strerror(errno));
 		}
-		else if (0 == retval)
+
+		if (FD_ISSET(sockfd, &read_set))
 		{
-			prtMsg("select timeout\n");	
-			continue;
-		}
-		else if (FD_ISSET(udisk_fd, &read_set))
-		{
-			bzero((void *)uevent_buf, BUFFER_SIZE);
-			retval = read(udisk_fd, uevent_buf, BUFFER_SIZE);
+			bzero(uevent_buf, sizeof(uevent_buf));
+			retval = recv(sockfd, &uevent_buf, sizeof(uevent_buf), 0);
 			if (-1 == retval)
 			{
-				prtExit(-1, "read error %s\n", strerror(errno));
+				prtMsg("read error %s\n", strerror(errno));
+				continue;
 			}
 			else
 			{
-				prtMsg("recv msg : %s\n", uevent_buf);	
+				prtMsg("recv msg : %s\n", uevent_buf);
+
+				udisk_parse(uevent_buf);
 			}
 		}//end of if()
 	}//end of while(1)
-}//end of func()
+}
+
+int udisk_work(void *arg)
+{
+	int udisk_fd = udisk_create_socket_fd();
+	prtMsg("socket fd = %d\n", udisk_fd);
+
+	udisk_recv(udisk_fd);
+
+	return 0;
+}
 

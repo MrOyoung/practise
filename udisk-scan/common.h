@@ -8,6 +8,6 @@
 #ifndef _COMMON_H_
 #define _COMMON_H_
 
-extern int udisk_monitor(void *arg);
+extern int udisk_work(void *arg);
 
 #endif //_COMMON_H_

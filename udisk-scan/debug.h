@@ -20,7 +20,7 @@
 #define prtMsg(fmt, ...) \
 	printf("[file:%s] [func:%s] [line:%d] "fmt" ",\
 			__FILE__, __FUNCTION__, __LINE__, \
-			 ##__VA_ARGS__);
+			 ##__VA_ARGS__)
 
 
 #endif //_DEBUG_H_
